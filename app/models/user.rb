@@ -34,6 +34,11 @@ class User < ApplicationRecord
                             :on => :create 
 
     def thumbnail
+        # if self.picture.nil?
+        #     self.picture.variant(:resize => '77x77!').processed
+        # else
+        #     return "100/avatar_default.png"
+        # end
         return self.picture.variant(:resize => '77x77!').processed
     end
     
