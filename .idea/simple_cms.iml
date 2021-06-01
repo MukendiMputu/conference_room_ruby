@@ -25,6 +25,16 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/50" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/100" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/480" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/640" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/1280" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/1920" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/icon" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/iconLight" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/images/landscapes" />
+      <excludeFolder url="file://$MODULE_DIR$/storage" />
     </content>
     <orderEntry type="jdk" jdkName="rbenv: 2.7.1" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -370,28 +380,6 @@
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/builder-3.2.4/doc" />
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/builder-3.2.4/test" />
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/builder-3.2.4/rakelib" />
-        </excluded>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="bundler (vbundled(2.1.4)) [path][gem]" type="rubylib">
-        <properties>
-          <option name="version" value="4" />
-        </properties>
-        <CLASSES>
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/exe" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/lib" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/man" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/exe" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/lib" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/man" />
-        </SOURCES>
-        <excluded>
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/exe" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/bundler-2.1.4/man" />
         </excluded>
       </library>
     </orderEntry>
@@ -1093,28 +1081,6 @@
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_mime-1.0.3/bin" />
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_mime-1.0.3/bench" />
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_mime-1.0.3/.github" />
-        </excluded>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="mini_portile2 (vbundled(2.5.0)) [path][gem]" type="rubylib">
-        <properties>
-          <option name="version" value="4" />
-        </properties>
-        <CLASSES>
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/lib" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/test" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/concourse" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/lib" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/test" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/concourse" />
-        </SOURCES>
-        <excluded>
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/test" />
-          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/mini_portile2-2.5.0/concourse" />
         </excluded>
       </library>
     </orderEntry>
@@ -2211,6 +2177,7 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.2.19, rbenv: 2.7.1) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

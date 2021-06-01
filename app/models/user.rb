@@ -39,7 +39,7 @@ class User < ApplicationRecord
         # else
         #     return "100/avatar_default.png"
         # end
-        return self.picture.variant(:resize => '77x77!').processed
+        self.picture.variant(:resize => '77x77!').processed
     end
     
 end
