@@ -216,6 +216,31 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="addressable (vbundled(2.8.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/lib" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/data" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/spec" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/tasks" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/lib" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/data" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/spec" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/tasks" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/data" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/spec" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/addressable-2.8.0/tasks" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="autoprefixer-rails (vbundled(10.2.4.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -1182,6 +1207,28 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="nokogiri (vbundled(1.11.6)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/bin" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/ext" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/bin" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/ext" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/bin" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/nokogiri-1.11.6-x86_64-linux/ext" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="os (vbundled(1.1.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -1247,6 +1294,34 @@
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/public_suffix-4.0.6/data" />
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/public_suffix-4.0.6/test" />
           <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/public_suffix-4.0.6/.github" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="puma (vbundled(4.3.8)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/bin" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/ext" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/lib" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/docs" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/tools" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/bin" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/ext" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/lib" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/docs" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/tools" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/bin" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/ext" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/docs" />
+          <root url="file://$USER_HOME$/.gem/ruby/2.7.0/gems/puma-4.3.8/tools" />
         </excluded>
       </library>
     </orderEntry>
@@ -2092,7 +2167,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.2.19, rbenv: 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.11.6, rbenv: 2.7.1) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
