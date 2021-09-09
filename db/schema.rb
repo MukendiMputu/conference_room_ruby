@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 2021_01_11_220538) do
     t.time "end_time"
     t.integer "user_id"
     t.integer "room_id"
-    t.datetime "created_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
-    t.datetime "updated_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["room_id"], name: "index_bookings_on_room_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
@@ -58,8 +58,8 @@ ActiveRecord::Schema.define(version: 2021_01_11_220538) do
     t.string "last_name", limit: 50
     t.string "email"
     t.integer "booking_id"
-    t.datetime "created_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
-    t.datetime "updated_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["booking_id"], name: "index_guests_on_booking_id"
   end
 
@@ -67,19 +67,18 @@ ActiveRecord::Schema.define(version: 2021_01_11_220538) do
     t.integer "guest_id"
     t.integer "booking_id"
     t.string "status"
-    t.datetime "created_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
-    t.datetime "updated_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["booking_id", "guest_id"], name: "index_invitations_on_booking_id_and_guest_id"
   end
 
   create_table "notes", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.integer "booking_id"
     t.text "content"
-    t.bigint "prev_note"
-    t.datetime "created_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
-    t.datetime "updated_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
+    t.integer "prev_note"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["booking_id"], name: "index_notes_on_booking_id"
-    t.index ["prev_note"], name: "fk_noteList_idx"
   end
 
   create_table "rooms", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
@@ -101,11 +100,10 @@ ActiveRecord::Schema.define(version: 2021_01_11_220538) do
     t.string "email", default: "", null: false
     t.string "password_digest"
     t.string "picture"
-    t.datetime "created_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
-    t.datetime "updated_at", precision: 6, default: -> { "current_timestamp(6)" }, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "notes", "notes", column: "prev_note", name: "fk_noteList", on_update: :cascade, on_delete: :cascade
 end
