@@ -1,6 +1,6 @@
 class CreateBookings < ActiveRecord::Migration[6.0]
   def up
-    create_table :bookings do |t|
+    create_table :bookings, if_not_exists: true do |t|
       t.string "agenda", :limit => 45
       t.date "date"
       t.time "start_time"

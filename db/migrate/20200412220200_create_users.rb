@@ -1,6 +1,6 @@
 class CreateUsers < ActiveRecord::Migration[6.0]
   def up
-    create_table :users do |t|
+    create_table :users, if_not_exists: true do |t|
       t.column "first_name", :string, :limit => 25
       t.string "last_name", :limit => 50
       t.string "nickname", :limit => 25, :unique => true
