@@ -1,6 +1,6 @@
 class CreateInvitations < ActiveRecord::Migration[6.0]
   def up
-    create_table :invitations do |t|
+    create_table :invitations, if_not_exists: true do |t|
       t.integer "guest_id"
       t.integer "booking_id"
       t.string "status"
