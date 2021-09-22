@@ -1,0 +1,59 @@
+<% @page_title = 'Signup'%>
+<div id="section">
+    <div id="main_pane">
+        <h3>CREATE YOUR ACCOUNT</h3>
+        <% if !flash[:error].blank? %>
+        <div class = "error">
+          <%= flash[:error] %>
+        </div>
+        <% end %>
+        <% if !flash[:notice].blank? %>
+        <div class = "notice">
+          <%= flash[:notice] %>
+        </div>
+        <% end %>
+        <% if !flash[:alert].blank? %>
+        <div class = "alert">
+          <%= flash[:alert] %>
+        </div>
+        <% end %>
+        <%= form_with(model: @user, :class => 'form-validate', :aria => {:label => 'signup form'}, :local => true) do |f| %>
+        <%= image_tag("100/avatar_default.png", :class =>"img_widget", :alt => "avatar default picture")%><br/>
+        <%= f.label(:picture, "Choose a picture: ") %>
+        <%= f.file_field(:picture, accept: 'image/png,image/gif,image/jpeg' ,:aria => {:label => 'picture upload'}) %><hr/>
+        <table summary="registration form">
+            <tr>
+                <td><%= f.label(:first_name, "First Name:") %></td>
+                <td><%= f.text_field(:first_name) %></td>
+                <td rowspan="7"><%= error_messages_for(@user) %></td>
+            </tr>
+            <tr>
+                <td><%= f.label(:last_name, "Last Name:") %></td>
+                <td><%= f.text_field(:last_name) %>
+                </td>
+            </tr>
+            <tr>
+                <td><%= f.label(:nickname, "Nickname:") %></td>
+                <td><%= f.text_field(:nickname) %></td>
+            </tr>
+            <tr>
+                <td><%= f.label(:email, "Email Address:") %></td>
+                <td><%= f.text_field(:email) %></td>
+            </tr>
+            <tr>
+                <td><%= f.label(:password, "Password:") %></td>
+                <td><%= f.password_field(:password) %></td>
+            </tr>
+            <tr>
+                <td><%= f.label(:password_confirmation, "Confirm your password:") %></td>
+                <td><%= f.password_field(:password_confirmation, :aria => { :label => 'password confirmation' }) %></td>
+            </tr>
+            <tr>
+                <td><%= f.submit('Sign up') %></td>
+            </tr>
+        </table>
+        <hr />
+        <% end %>
+        <p class="">or <%= link_to("Sign in", login_index_path) %></p>
+    </div><!-- end of main pane -->
+</div> <!-- end of section -->
