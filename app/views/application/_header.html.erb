@@ -9,7 +9,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-        <div class=" collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+        <div class=" collapse navbar-collapse ml-auto justify-content-between" id="navbarSupportedContent">
           <div class="mr-auto ">
             <ul class="list-inline navbar-nav" aria-label="navigation options">
               <li class="nav-item list-inline-item active">
@@ -39,62 +39,9 @@
             </ul>
           </div>
           <% else %>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login_main">
-              Sign in
-            </button>
-            <!--[ LOGIN ]-->
-            <div id="login_main" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="signInModalLabel">Sign in</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <% if !flash[:notice].blank? %>
-                    <div class = "alert alert-info" role="alert" aria-label="application notification message">
-                        <%= flash[:notice] %>
-                    </div>
-                    <% end %>
-                    <% if !flash[:error].blank? %>
-                    <div class = "alert alert-danger" role="alert" aria-label="application error message">
-                        <%= flash[:error] %>
-                    </div>
-                    <% end %>
-                    <% if !flash[:alert].blank? %>
-                    <div class = "alert alert-warning" role="alert" aria-label="application alert message">
-                        <%= flash[:alert] %>
-                    </div>
-                    <% end %>
-                    <%= form_with(:url => '/login', :method => 'post', :class => '') do |form| %>
-                    <%= form.label(:email, :class => 'sr-only')%>
-                    <div class="input-group  mr-sm-2 mb-2">
-                        <%= form.email_field(:email, placeholder: "e.g. name@address.com", :class => 'form-control')%>
-                        <div class="input-group-append">
-                          <div class="input-group-text">@</div>
-                        </div>
-                    </div>
-                    <%= form.label(:password, :class => 'sr-only')%>
-                    <%= form.password_field(:password, placeholder: "Enter your password", :class => 'form-control  mr-sm-2')%>
-                    <div class="form-check  mr-sm-2 my-3">
-                      <%= form.check_box(:ckeckBox, :class => 'form-check-input') %>
-                      <%= form.label(:checkBox, 'Remember me', :class => 'form-check-label text-dark')%>
-                    </div>
-                    <%= form.submit('Sign in', :class => 'btn btn-primary ') %>
-                    <% end %>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <span id="para_account" >
-                &nbsp;&nbsp; <%= link_to("Sign up", new_user_path, :class => 'btn btn-secondary ') %>
-            </span>
+	  <div id="h_side-nav-login" class="d-flex px-5">
+          <%= link_to(login_index_path, :class => 'btn btn-light') do %> Sign in <% end %>
+	  </div>
           <% end %>
         </div>
       </nav>
