@@ -10,7 +10,7 @@ gem 'rails', '~> 6.1', '>= 6.1.4.1'
 gem 'mysql2', '>= 0.4.4'
 
 # Use Puma as the app server
-gem 'puma', '~> 5.4'
+gem 'puma', '~> 5.6'
 
 # Use Passenger as the app server
 gem 'passenger', '~> 6.0', '>= 6.0.10' , require: 'phusion_passenger/rack_handler'
