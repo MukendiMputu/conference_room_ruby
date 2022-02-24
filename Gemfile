@@ -62,6 +62,9 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # To generate the App documentation
+  gem 'rdoc', '>= 4.2.2'
 end
 
 group :test do
