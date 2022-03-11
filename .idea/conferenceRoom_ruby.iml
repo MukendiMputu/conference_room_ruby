@@ -233,6 +233,28 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.16)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/lib" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/spec" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/lib" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bcrypt-3.1.16/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="bindex (vbundled(0.8.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -298,6 +320,25 @@
           <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/builder-3.2.4/doc" />
           <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/builder-3.2.4/test" />
           <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/builder-3.2.4/rakelib" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bundler (vbundled(2.3.7)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bundler-2.3.7/exe" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bundler-2.3.7/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bundler-2.3.7/exe" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bundler-2.3.7/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/bundler-2.3.7/exe" />
         </excluded>
       </library>
     </orderEntry>
@@ -837,6 +878,47 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="passenger (vbundled(6.0.12)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/bin" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/dev" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/doc" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/man" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/src" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/build" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/images" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/resources" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/download_cache" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/bin" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/dev" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/doc" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/man" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/src" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/build" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/images" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/resources" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/download_cache" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/bin" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/dev" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/doc" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/man" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/src" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/build" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/images" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/resources" />
+          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/passenger-6.0.12/download_cache" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="psych (vbundled(4.0.3)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -883,34 +965,6 @@
           <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/public_suffix-4.0.6/data" />
           <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/public_suffix-4.0.6/test" />
           <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/public_suffix-4.0.6/.github" />
-        </excluded>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="puma (vbundled(5.6.2)) [path][gem]" type="rubylib">
-        <properties>
-          <option name="version" value="4" />
-        </properties>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/bin" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/ext" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/lib" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/docs" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/tools" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/bin" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/ext" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/lib" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/docs" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/tools" />
-        </SOURCES>
-        <excluded>
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/bin" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/ext" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/docs" />
-          <root url="file://$MODULE_DIR$/$GEM_HOME/ruby/3.0.0/gems/puma-5.6.2/tools" />
         </excluded>
       </library>
     </orderEntry>
@@ -1421,7 +1475,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.3.7, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stringio (v3.0.1, ruby-3.0.3-p157) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
