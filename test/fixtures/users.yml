@@ -1,0 +1,7 @@
+# This file prepare the test data for the user model
+
+opowley2:
+  uname: opowley2
+  first_name: Ogdan
+  last_name: Powley
+  email: opowley2@admin.ch
