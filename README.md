@@ -1,24 +1,11 @@
-# README
+# Conference Room (with Ruby on Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The goal of this web application is for me to design and build the core interface for a meeting room booking website,
+using Ruby on Rails. 
 
-Things you may want to cover:
+## Form validation in JavaScript 
 
-* Ruby version
+## The Database
 
-* System dependencies
+## The Back-end Programming in Ruby
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
