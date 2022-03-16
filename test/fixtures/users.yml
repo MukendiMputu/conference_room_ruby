@@ -5,3 +5,11 @@ opowley2:
   first_name: Ogdan
   last_name: Powley
   email: opowley2@admin.ch
+  password_digest: QnLrxBhm2T
+
+kspaulee:
+  uname: kspaulee
+  first_name: Kevina
+  last_name: Spaule
+  email: kspaulee@zdnet.com
+  password_digest: xjaIbrMYFO
