@@ -1,7 +1,7 @@
-require "test_helper"
+require "test/test_helper"
 
 class EventTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "events count" do
+    assert_equal 2, Event.count
+  end
 end
