@@ -1,6 +1,7 @@
 # This file prepare the test data for the user model
 
 opowley2:
+  # column: value
   uname: opowley2
   first_name: Ogdan
   last_name: Powley
@@ -8,6 +9,7 @@ opowley2:
   password_digest: QnLrxBhm2T
 
 kspaulee:
+  # column: value
   uname: kspaulee
   first_name: Kevina
   last_name: Spaule
