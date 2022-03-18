@@ -1,6 +1,6 @@
 class CreateUsers < ActiveRecord::Migration[6.1]
-  def self.up
-    create_table :users do |t|
+  def self.change
+    create_table :users, if_not_exists: true do |t|
       t.string :uname, :limit => 25
       t.string :first_name, :limit => 25
       t.string :last_name, :limit => 50
@@ -10,9 +10,6 @@ class CreateUsers < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
-  end
-
-  def self.down
-    drop_table :users
+    add_index("users", %w[uname first_name last_name email])
   end
 end

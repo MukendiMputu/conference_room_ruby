@@ -7,6 +7,6 @@ class CreateInvitations < ActiveRecord::Migration[6.1]
       
       t.timestamps
     end
-    add_index("invitations", ["booking_id", "guest_id"])
+    add_index("invitations", %w[booking_id guest_id])
   end
 end

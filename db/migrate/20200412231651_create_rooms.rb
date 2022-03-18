@@ -10,9 +10,6 @@ class CreateRooms < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-  end
-
-  def down
-    drop_table :rooms
+    add_index("rooms", %w[number capacity configuration])
   end
 end
