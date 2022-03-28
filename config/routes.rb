@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get ':controller/:action/:id'
+  get 'welcome/index'
+  post 'welcome/search_booking'
 end

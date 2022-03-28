@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2022_03_15_210413) do
 
-  create_table "bookings", charset: "utf8mb4", force: :cascade do |t|
+  create_table "bookings", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "agenda", limit: 45
     t.date "booking_date", null: false
     t.time "start_time"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2022_03_15_210413) do
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
-  create_table "events", charset: "utf8mb4", force: :cascade do |t|
+  create_table "events", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.integer "user_id"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2022_03_15_210413) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "guests", charset: "utf8mb4", force: :cascade do |t|
+  create_table "guests", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "first_name", limit: 25
     t.string "last_name", limit: 50
     t.string "email"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2022_03_15_210413) do
     t.index ["booking_id"], name: "index_guests_on_booking_id"
   end
 
-  create_table "invitations", charset: "utf8mb4", force: :cascade do |t|
+  create_table "invitations", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.integer "guest_id"
     t.integer "booking_id"
     t.boolean "accepted", default: false
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2022_03_15_210413) do
     t.index ["booking_id", "guest_id"], name: "index_invitations_on_booking_id_and_guest_id"
   end
 
-  create_table "notes", charset: "utf8mb4", force: :cascade do |t|
+  create_table "notes", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.text "content"
     t.integer "prev_note"
     t.integer "booking_id"
