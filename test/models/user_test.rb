@@ -1,7 +1,8 @@
-require 'test/test_helper'
+require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
-  def test_truth
-    assert true
+  test "create user successfully" do # same as def test_the_truth (without 'do')
+    user = User.new
+    assert_not user.save
   end
 end
