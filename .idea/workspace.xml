@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="updates migrations">
+    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="runs first test attempts">
       <change beforePath="$PROJECT_DIR$/.idea/conference_room.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/conference_room.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20200412231651_create_rooms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200412231651_create_rooms.rb" afterDir="false" />
@@ -235,7 +235,7 @@
       <updated>1647719721581</updated>
       <workItem from="1647719727625" duration="1370000" />
       <workItem from="1647803094537" duration="7073000" />
-      <workItem from="1648508890526" duration="1112000" />
+      <workItem from="1648508890526" duration="1426000" />
     </task>
     <task id="LOCAL-00001" summary="updates migrations">
       <created>1647817243603</created>
@@ -263,9 +263,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updates migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates migrations" />
+    <MESSAGE value="runs first test attempts" />
+    <option name="LAST_COMMIT_MESSAGE" value="runs first test attempts" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/conference_room@test_events_count.rcov" NAME="test_events_count Coverage Results" MODIFIED="1648502857192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
+    <SUITE FILE_PATH="coverage/conference_room@test_create_user_successfully.rcov" NAME="test_create_user_successfully Coverage Results" MODIFIED="1648503067492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@Development__conference_room.rcov" NAME="Development: conference_room Coverage Results" MODIFIED="1647720440958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
   </component>
 </project>
