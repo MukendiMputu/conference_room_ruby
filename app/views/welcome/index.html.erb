@@ -1,7 +1,7 @@
    <% @page_title = 'Home'%> 
     <!-- [ HEADER ] -->
     <header id="header" aria-label="page header">
-      <%= show_default_header %>
+      <%= render partial: 'application/header' %>
       <!--[ BANNER ]-->
       <!-- the picture allows much more options -->
       <picture id="banner_picture" role="img" aria-label="banner picture">
@@ -23,7 +23,7 @@
           </div>
 
           <div id="swiper" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 flex-md-nowrap overflow-hidden">
-              <% @rooms.each do |room| %>
+            <%  @rooms.each do |room| %>
               <div class="card mb-2 mx-3 shadow-sm">
                 <picture id="room_thumbnail" role="img" aria-label="room thumbnail">
                   <source media="(min-width:600px)" srcset="<%= asset_path("480/#{room.picture}", type: :image) %>">
@@ -44,7 +44,7 @@
           </div>
         </section>
         <section class="my-6" >
-          <div id="avaible" class="mt-5 mb-5" >
+          <div id="available" class="mt-5 mb-5" >
             <p class="mb-0 text-uppercase text-monospace font-weight-bold text-primary"><%= time_tag(Date.today, :id => 'dp_date') %></p>
             <h2>Availabilities</h2>
           </div>
@@ -146,6 +146,3 @@
       </div>
     </footer>
     <div aria-live="polite" class="sr-only"></div>
-    
-
-
