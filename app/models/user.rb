@@ -41,5 +41,4 @@ class User < ApplicationRecord
     # end
     self.picture.variant(:resize => '77x77!').processed
   end
-
 end

@@ -10,5 +10,8 @@ class CreateEvents < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
+    add_index("events", "title")
+    add_index("events", "content")
+    add_index("events", "event_start_time")
   end
 end
