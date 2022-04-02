@@ -3,7 +3,7 @@ class User < ApplicationRecord
   has_many :invitations, :through => :bookings
 
   has_secure_password
-  has_one_attached :picture
+  has_one_attached :avatar
 
   EMAIL_REGEX = /\A[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}\Z/i
   EMAIL_REGEX2 = /\A([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)\Z/i

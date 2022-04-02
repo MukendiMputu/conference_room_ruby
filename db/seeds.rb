@@ -5,8 +5,56 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-rooms = Room.create([
-                      { building: 'RIC', number: 'CS310', capacity: 50, configuration: 'Circle', picture: 'conference_blue.jpg', description: 'example room' },
-                      { building: 'SEC', number: 'CS310', capacity: 25, configuration: 'U-Shape', picture: 'conference_green.jpg', description: 'example room' },
-                      { building: 'Riddell', number: 'CS310', capacity: 100, configuration: 'Conference', picture: 'conference_royal.jpg', description: 'example room' },
-                    ])
+if Configuration.count.zero?
+  Configuration.create([{name: 'U-Shape', }])
+end
+
+
+if Room.count.zero?
+  rooms = Room.create([
+                        {
+                          building: 'RIC',
+                          number: 'CS310',
+                          capacity: 50,
+                          size: 26,
+                          description: 'example room'
+                        }, {
+                          building: 'RIC',
+                          number: 'CS310',
+                          capacity: 50,
+                          size: 26,
+                          description: 'example room'
+                        }, {
+                          building: 'RIC',
+                          number: 'CS310',
+                          capacity: 50,
+                          size: 26,
+                          description: 'example room'
+                        }, {
+                          building: 'RIC',
+                          number: 'CS310',
+                          capacity: 50,
+                          size: 26,
+                          description: 'example room'
+                        }, {
+                          building: 'RIC',
+                          number: 'CS310',
+                          capacity: 50,
+                          size: 26,
+                          description: 'example room'
+                        },
+                      ])
+  picture_list = %w[conference_blue conference_brown conference_green conference_red conference_rose conference_royal conference_white conference_wood conference_world conference_yellow]
+  rooms.each do |r|
+    picture_name = picture_list.sample
+    r.picture.attach(
+      io: File.open(
+        File.join(Rails.root, "/assets/images/480/#{picture_name}.jpg")
+      ),
+      filename: "#{picture_name}.jpg", content_type: 'application/jpg'
+    )
+  end
+end
+users = User.create([{}])
+
+guests = Guest.create([])
