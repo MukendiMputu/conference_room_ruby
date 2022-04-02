@@ -1,7 +1,7 @@
       <nav class=" navbar navbar-expand-lg navbar-dark bg-dark" aria-label="navigation menu">
         <div id="page_heading" class="flex-shrink-1" aria-label="page heading">
             <%= link_to(home_path, :role => 'link', :class => 'navbar-brand') do %>
-              <%= image_tag('100/conference_room.png', :size => '80x80') %>
+              <%= image_tag('100/conference_room_white_transparent.png', :size => '80x80') %>
               <span class="d-none d-sm-inline">Conference Room</span>
             <% end %>
         </div>
@@ -12,12 +12,6 @@
         <div class=" collapse navbar-collapse ml-auto justify-content-between" id="navbarSupportedContent">
           <div class="mr-auto ">
             <ul class="list-inline navbar-nav" aria-label="navigation options">
-              <li class="nav-item list-inline-item active">
-                <%= link_to(home_path, :class => 'nav-link') do %>
-                Home
-                <span class="sr-only">(current)</span>
-                <% end %>
-              </li>
               <li class="nav-item list-inline-item dropdown">
                 <a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle" 
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" href="#service">Our Services</a>

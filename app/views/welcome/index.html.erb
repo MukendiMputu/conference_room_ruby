@@ -33,7 +33,7 @@
                   <h5 class="card-title"><%= room.name %></h5>
                   <h6 class="card-subtitle mb-2 text-muted"><%= room.building %></h6>
                   <p class="card-text">
-                    <%= truncate(room.avantgarde, :length => 150, :separator => ' ') %><br/>
+                    <%= truncate(room.description, :length => 150, :separator => ' ') %><br/>
                   <br/><span>Configuration:  <%= room.configuration %></span>
                   <br/><span>Capacity:  <%= room.capacity %></span>
                   </p>
