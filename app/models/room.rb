@@ -1,6 +1,5 @@
 class Room < ApplicationRecord
   has_many :bookings
-  has_one_attached :picture
 
 
   scope :ordered, lambda { order("number") }

@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="update link path in templates">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/100/conference_room_light_transparent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/100/conference_room_white_transparent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220402214138_create_active_storage_tables.active_storage.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220402223219_create_configurations.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220402223353_create_categories.rb" afterDir="false" />
+    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="corrects views and controllers">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/conference_room.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/conference_room.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/100/cr_logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/room.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/room.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/application/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/spring.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/spring.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220331204134_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220331204134_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20220331204243_create_rooms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220331204243_create_rooms.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +308,7 @@
       <workItem from="1647803094537" duration="7073000" />
       <workItem from="1648508890526" duration="4971000" />
       <workItem from="1648750952915" duration="11085000" />
-      <workItem from="1648846464704" duration="12309000" />
+      <workItem from="1648846464704" duration="18523000" />
     </task>
     <task id="LOCAL-00001" summary="updates migrations">
       <created>1647817243603</created>
@@ -392,7 +380,42 @@
       <option name="project" value="LOCAL" />
       <updated>1648760771382</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update migrations">
+      <created>1648941840194</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648941840194</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updates assets/favicon">
+      <created>1648941874761</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648941874761</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updates models to use active storage">
+      <created>1648941912823</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1648941912823</updated>
+    </task>
+    <task id="LOCAL-00014" summary="installs gem image_processing">
+      <created>1648941932707</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648941932707</updated>
+    </task>
+    <task id="LOCAL-00015" summary="corrects views and controllers">
+      <created>1648941961602</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1648941961602</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,13 +443,18 @@
     <MESSAGE value="adds bootstrap" />
     <MESSAGE value="adds bootstrap gem to Gemfile" />
     <MESSAGE value="update link path in templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="update link path in templates" />
+    <MESSAGE value="update migrations" />
+    <MESSAGE value="updates assets/favicon" />
+    <MESSAGE value="updates models to use active storage" />
+    <MESSAGE value="installs gem image_processing" />
+    <MESSAGE value="corrects views and controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrects views and controllers" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/conference_room@test_events_count.rcov" NAME="test_events_count Coverage Results" MODIFIED="1648502857192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@test_create_user_successfully.rcov" NAME="test_create_user_successfully Coverage Results" MODIFIED="1648503342099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@irb.rcov" NAME="irb Coverage Results" MODIFIED="1648753002386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@Test__conference_room.rcov" NAME="Test: conference_room Coverage Results" MODIFIED="1648758841115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
-    <SUITE FILE_PATH="coverage/conference_room@Development__conference_room.rcov" NAME="Development: conference_room Coverage Results" MODIFIED="1648929604495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
+    <SUITE FILE_PATH="coverage/conference_room@Development__conference_room.rcov" NAME="Development: conference_room Coverage Results" MODIFIED="1649003350713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
   </component>
 </project>

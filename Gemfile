@@ -5,8 +5,6 @@ ruby '2.5.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5'
-# Use mysql as the database for Active Record
-gem 'mysql2', '~> 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -56,8 +54,15 @@ group :test do
 end
 
 group :development, :test do
+  # Use mysql as the database for Active Record
+  gem 'mysql2', '~> 0.5'
   # brings the RSpec testing framework to Ruby on Rails
   gem 'rspec-rails', '~> 5.0.0'
+end
+
+group :production do
+  # Use PostgreSQL as used in Heroku cloud platform
+  gem 'pg', '~> 1.3', '>= 1.3.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
