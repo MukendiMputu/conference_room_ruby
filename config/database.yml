@@ -15,7 +15,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: conferenceroom_user
   password: r!Wy0Za7
-  socket: /var/run/mysqld/mysqld.sock
+  socket: /var/run/mysqld/m ysqld.sock
 
 development:
   <<: *default
@@ -49,7 +49,8 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
+  adapter: pgsql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: conference_room_production
-  username: conference_room
+  username: gtpzselrsdllsm
   password: <%= ENV['CONFERENCE_ROOM_DATABASE_PASSWORD'] %>
