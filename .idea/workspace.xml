@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="updates locked ruby version">
+    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="updates production db configuration">
       <change beforePath="$PROJECT_DIR$/.idea/conference_room.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/conference_room.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
@@ -309,7 +309,7 @@
       <workItem from="1649143814029" duration="3097000" />
       <workItem from="1649504899883" duration="4846000" />
       <workItem from="1649512595818" duration="161000" />
-      <workItem from="1649512778160" duration="473000" />
+      <workItem from="1649512778160" duration="821000" />
     </task>
     <task id="LOCAL-00001" summary="updates migrations">
       <created>1647817243603</created>
@@ -465,7 +465,8 @@
     <MESSAGE value="corrects views and controllers" />
     <MESSAGE value="makes up production ready" />
     <MESSAGE value="updates locked ruby version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates locked ruby version" />
+    <MESSAGE value="updates production db configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates production db configuration" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/conference_room@test_events_count.rcov" NAME="test_events_count Coverage Results" MODIFIED="1648502857192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
