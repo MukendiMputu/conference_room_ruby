@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="tests seeding the database">
-      <change afterPath="$PROJECT_DIR$/app/models/building.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220409160932_create_buildings.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/building_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/conference_room.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/conference_room.iml" afterDir="false" />
+    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="seeds db using migration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/room.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/room.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220331204243_create_rooms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220331204243_create_rooms.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220410212513_seed_database.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +58,7 @@
       <command value="rails g model" />
     </option>
   </component>
-  <component name="RunManager" selected="Ruby Console.rails console">
+  <component name="RunManager" selected="Ruby Console.irb">
     <configuration name="irb" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="conference_room" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -312,8 +304,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Ruby Console.rails console" />
         <item itemvalue="Ruby Console.irb" />
+        <item itemvalue="Ruby Console.rails console" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_events_count" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_create_user_successfully" />
         <item itemvalue="Ruby Console.irb" />
@@ -344,7 +336,7 @@
       <workItem from="1649512778160" duration="2034000" />
       <workItem from="1649516682068" duration="5899000" />
       <workItem from="1649524011362" duration="3543000" />
-      <workItem from="1649527571922" duration="1417000" />
+      <workItem from="1649527571922" duration="5308000" />
     </task>
     <task id="LOCAL-00001" summary="updates migrations">
       <created>1647817243603</created>
@@ -479,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649513864272</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="tests seeding the database">
+      <created>1649625609550</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1649625609550</updated>
+    </task>
+    <task id="LOCAL-00021" summary="seeds db using migration">
+      <created>1649626163822</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1649626163822</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,14 +523,15 @@
     <MESSAGE value="updates production db configuration" />
     <MESSAGE value="updates gitignore" />
     <MESSAGE value="tests seeding the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests seeding the database" />
+    <MESSAGE value="seeds db using migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="seeds db using migration" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/conference_room@test_events_count.rcov" NAME="test_events_count Coverage Results" MODIFIED="1648502857192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@rails_console.rcov" NAME="rails console Coverage Results" MODIFIED="1649527234504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@test_create_user_successfully.rcov" NAME="test_create_user_successfully Coverage Results" MODIFIED="1648503342099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
-    <SUITE FILE_PATH="coverage/conference_room@irb.rcov" NAME="irb Coverage Results" MODIFIED="1649526878338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
+    <SUITE FILE_PATH="coverage/conference_room@irb.rcov" NAME="irb Coverage Results" MODIFIED="1649628547797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@Test__conference_room.rcov" NAME="Test: conference_room Coverage Results" MODIFIED="1648758841115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
-    <SUITE FILE_PATH="coverage/conference_room@Development__conference_room.rcov" NAME="Development: conference_room Coverage Results" MODIFIED="1649524356313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
+    <SUITE FILE_PATH="coverage/conference_room@Development__conference_room.rcov" NAME="Development: conference_room Coverage Results" MODIFIED="1649627918800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
   </component>
 </project>

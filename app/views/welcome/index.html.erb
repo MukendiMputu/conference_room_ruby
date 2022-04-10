@@ -30,11 +30,11 @@
                   <img alt="conference room number <%= room.number %>" class="card-img-top " src="<%= asset_path("480/#{room.picture}", type: :image) %>"/>
                 </picture>
                 <div class="card-body">
-                  <h5 class="card-title"><%= room.name %></h5>
+                  <h5 class="card-title"><%= room.number %></h5>
                   <h6 class="card-subtitle mb-2 text-muted"><%= room.building %></h6>
                   <p class="card-text">
                     <%= truncate(room.description, :length => 150, :separator => ' ') %><br/>
-                  <br/><span>Configuration:  <%= room.configuration %></span>
+                  <br/><span>Configuration:  <%= Configuration.find_by(id: room.configuration_id).configuration_name %></span>
                   <br/><span>Capacity:  <%= room.capacity %></span>
                   </p>
                   <%= link_to('View more', rooms_show_path(room.id), :class => 'btn btn-secondary') %>
