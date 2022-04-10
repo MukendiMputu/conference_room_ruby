@@ -51,8 +51,8 @@ if Room.count.zero?
       Room.create(
         building: building,
         number: building[:code] + rand(100..550).to_s,
-        category_id: Category.find(rand(5..8)).id,
-        configuration_id: Configuration.find(rand(7..12)).id,
+        category_id: Category.find(rand(Category.first.id..Category.last.id)).id,
+        configuration_id: Configuration.find(rand(Configuration.first.id..Configuration.last.id)).id,
         capacity: rand(100) * 10,
         size: rand(1000),
         description: 'example room',
