@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="updates production db configuration">
+    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="updates gitignore">
+      <change afterPath="$PROJECT_DIR$/app/models/building.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220409160932_create_buildings.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/conference_room.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/conference_room.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/room.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/room.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220331204243_create_rooms.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220331204243_create_rooms.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +56,37 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="/usr/lib/ruby/gems/3.0.0/gems" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="rails g model" />
     </option>
   </component>
-  <component name="RunManager" selected="Rails.Development: conference_room">
+  <component name="RunManager" selected="Ruby Console.rails console">
     <configuration name="irb" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="conference_room" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="ruby-3.0.3-p157" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="/usr/bin/irb" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <IRB_RUN_CONFIG NAME="CONSOLE_TYPE" VALUE="IRB" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rails console" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="conference_room" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -73,9 +101,9 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/.rvm/rubies/ruby-2.5.5/bin/irb" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <IRB_RUN_CONFIG NAME="CONSOLE_TYPE" VALUE="IRB" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/rails" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
+      <IRB_RUN_CONFIG NAME="CONSOLE_TYPE" VALUE="RAILS" />
       <method v="2" />
     </configuration>
     <configuration name="Development: conference_room" type="RailsRunConfigurationType" factoryName="Rails">
@@ -277,11 +305,14 @@
       <item itemvalue="Rake.spec: conference_room" />
       <item itemvalue="Rake.test: conference_room" />
       <item itemvalue="Ruby Console.irb" />
+      <item itemvalue="Ruby Console.rails console" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_create_user_successfully" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_events_count" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby Console.rails console" />
+        <item itemvalue="Ruby Console.irb" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_events_count" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_create_user_successfully" />
         <item itemvalue="Ruby Console.irb" />
@@ -309,7 +340,10 @@
       <workItem from="1649143814029" duration="3097000" />
       <workItem from="1649504899883" duration="4846000" />
       <workItem from="1649512595818" duration="161000" />
-      <workItem from="1649512778160" duration="821000" />
+      <workItem from="1649512778160" duration="2034000" />
+      <workItem from="1649516682068" duration="5899000" />
+      <workItem from="1649524011362" duration="3543000" />
+      <workItem from="1649527571922" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="updates migrations">
       <created>1647817243603</created>
@@ -430,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649149083126</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="updates production db configuration">
+      <created>1649513615063</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1649513615063</updated>
+    </task>
+    <task id="LOCAL-00019" summary="updates gitignore">
+      <created>1649513864272</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1649513864272</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,13 +514,15 @@
     <MESSAGE value="makes up production ready" />
     <MESSAGE value="updates locked ruby version" />
     <MESSAGE value="updates production db configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates production db configuration" />
+    <MESSAGE value="updates gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates gitignore" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/conference_room@test_events_count.rcov" NAME="test_events_count Coverage Results" MODIFIED="1648502857192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
+    <SUITE FILE_PATH="coverage/conference_room@rails_console.rcov" NAME="rails console Coverage Results" MODIFIED="1649527234504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@test_create_user_successfully.rcov" NAME="test_create_user_successfully Coverage Results" MODIFIED="1648503342099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
-    <SUITE FILE_PATH="coverage/conference_room@irb.rcov" NAME="irb Coverage Results" MODIFIED="1648753002386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
+    <SUITE FILE_PATH="coverage/conference_room@irb.rcov" NAME="irb Coverage Results" MODIFIED="1649526878338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
     <SUITE FILE_PATH="coverage/conference_room@Test__conference_room.rcov" NAME="Test: conference_room Coverage Results" MODIFIED="1648758841115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
-    <SUITE FILE_PATH="coverage/conference_room@Development__conference_room.rcov" NAME="Development: conference_room Coverage Results" MODIFIED="1649003350713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
+    <SUITE FILE_PATH="coverage/conference_room@Development__conference_room.rcov" NAME="Development: conference_room Coverage Results" MODIFIED="1649524356313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
   </component>
 </project>
