@@ -49,7 +49,7 @@ if Room.count.zero?
     picture_list.each do |room|
       picture_name = picture_list.sample
       Room.create(
-        building: building,
+        building_id: building.id,
         number: building[:code] + rand(100..550).to_s,
         category_id: Category.find(rand(Category.first.id..Category.last.id)).id,
         configuration_id: Configuration.find(rand(Configuration.first.id..Configuration.last.id)).id,
