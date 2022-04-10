@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="seeds db using migration">
+    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="successfully seeded database">
+      <change afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/configuration.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/configuration_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20220410212513_seed_database.rb" beforeDir="false" />
@@ -336,7 +340,7 @@
       <workItem from="1649512778160" duration="2034000" />
       <workItem from="1649516682068" duration="5899000" />
       <workItem from="1649524011362" duration="3543000" />
-      <workItem from="1649527571922" duration="5308000" />
+      <workItem from="1649527571922" duration="5649000" />
     </task>
     <task id="LOCAL-00001" summary="updates migrations">
       <created>1647817243603</created>
@@ -524,7 +528,8 @@
     <MESSAGE value="updates gitignore" />
     <MESSAGE value="tests seeding the database" />
     <MESSAGE value="seeds db using migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="seeds db using migration" />
+    <MESSAGE value="successfully seeded database" />
+    <option name="LAST_COMMIT_MESSAGE" value="successfully seeded database" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/conference_room@test_events_count.rcov" NAME="test_events_count Coverage Results" MODIFIED="1648502857192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
