@@ -19,6 +19,8 @@ system (RDBMS). In the RDBMS, I created a specific user for this web application
 schema. I wrote the data migration classes in Rails to generate the schema and all of the tables that go with it. I'll
 update this README after creating an Entity-Relationship Diagram (ERD) of my application models.
 
+![Entity-Relationship Diagram (ERD)](conference_room_development_db_schema.png)
+
 ### Testing the App
 
 For testing, I set up the required database environment and utilized fixtures, which are essentially fancy words for

@@ -42,3 +42,4 @@
 yarn-debug.log*
 .yarn-integrity
 /vendor/bundle/ruby/
+/~$conference_room_development_db_schema.drawio.bkp
