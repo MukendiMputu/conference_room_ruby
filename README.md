@@ -16,8 +16,9 @@ to master.
 
 Because I'm using Manjaro (a Linux Distro based on Arch Linux), I picked mariaDB as the relational database management
 system (RDBMS). In the RDBMS, I created a specific user for this web application and provided it access to the database
-schema. I wrote the data migration classes in Rails to generate the schema and all of the tables that go with it. I'll
-update this README after creating an Entity-Relationship Diagram (ERD) of my application models.
+schema. I wrote the data migration classes in Rails to generate the schema and all of the tables that go with it.
+
+#### Application models' Entity-Relationship Diagram (ERD)
 
 ![Entity-Relationship Diagram (ERD)](conference_room_development_db_schema.png)
 
