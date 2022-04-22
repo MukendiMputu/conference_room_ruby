@@ -1,22 +1,22 @@
 <% @page_title = 'Signin'%>
 <section class="text-center d-flex py-5">
   <%= form_with(:url => '/login', :method => 'post', :class => 'form-signin m-auto') do |form| %>
-  <% if !flash[:error].blank? %>
-  <div class = "alert alert-danger">
-    <%= flash[:error] %>
+  <% unless flash[:error].blank? %>
+  <div class="alert alert-danger">
+          <%=  flash[:error]  %>
   </div>
-  <% end %>
-  <% if !flash[:notice].blank? %>
-  <div class = "alert alert-success">
-    <%= flash[:notice] %><br/>
+  <%  end %>
+  <% unless flash[:notice].blank? %>
+  <div class="alert alert-success">
+          <%=  flash[:notice]  %><br/>
     Go back to <%= link_to("Home", root_path, :class => 'alert-link') %>
   </div>
-  <% end %>
-  <% if !flash[:alert].blank? %>
-  <div class = "alert alert-warning">
-    <%= flash[:alert] %>
+  <%  end %>
+  <% unless flash[:alert].blank? %>
+  <div class="alert alert-warning">
+          <%=  flash[:alert]  %>
   </div>
-  <% end %>
+  <%  end %>
   <%= link_to(root_path, :role => 'link', :class => '') do %>
     <%= image_tag("100/conference_room_light.jpg", :size => '100x100', :class =>"mb-4", :alt => "conference room")%>
   <% end %>

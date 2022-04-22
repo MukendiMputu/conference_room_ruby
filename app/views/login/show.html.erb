@@ -5,30 +5,30 @@
 <main class="container-md mt-lg-5 mt-md-3">
 
     <!-- FLASH NOTIFICATIONS -->
-    <% if !flash[:notice].blank? %>
-        <div class = "alert alert-success alert-dismissible fade show" role="alert" aria-label="application notification message">
-            <%= flash[:notice] %>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    <% end %>
-    <% if !flash[:error].blank? %>
-    <div class = "alert alert-error alert-dismissible fade show" role="alert" aria-label="application error message">
-        <%= flash[:error] %>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <% end %>
-    <% if !flash[:alert].blank? %>
-    <div class = "alert alert-warning alert-dismissible fade show" role="alert" aria-label="application alert message">
-        <%= flash[:alert] %>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <% end %>
+    <% unless flash[:notice].blank? %>
+  <div class="alert alert-success alert-dismissible fade show" role="alert" aria-label="application notification message">
+        <%=  flash[:notice]  %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <%  end %>
+    <% unless flash[:error].blank? %>
+  <div class="alert alert-error alert-dismissible fade show" role="alert" aria-label="application error message">
+        <%=  flash[:error]  %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <%  end %>
+    <% unless flash[:alert].blank? %>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert" aria-label="application alert message">
+        <%=  flash[:alert]  %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <%  end %>
     <!-- END OF FLASH NOTIFICATIONS -->
 
     <!-- USER PROFILE -->
@@ -182,7 +182,7 @@
                                 </ul>
                             </li>
                         <% end %>
-                    <ol>
+                    </ol>
                 </div>
             </section>
             <% 
