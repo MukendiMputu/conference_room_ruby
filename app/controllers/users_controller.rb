@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-   
-  before_action :confirm_logged_in, :except => [:new, :create]
+  before_action :confirm_logged_in, except: [:new, :create]
 
   def new
     # Just shows the signup form
@@ -13,24 +12,23 @@ class UsersController < ApplicationController
     if @user.save
       flash[:notice] = "Account created successfully."
       @user.picture.attach(params[:user][:picture])
-      redirect_to(login_index_path)
+      redirect_to(login_path)
     else
       logger.error(@user.errors.full_messages)
       flash.now[:error] = "Something went wrong!"
-      render('new')
+      render("new")
     end
   end
-
 
   def edit
     @user = User.find(params[:id])
     if @user.update(params.require(:user).permit(:first_name, :last_name, :nickname, :email, :password))
       flash[:notice] = "Account updated successfully."
-      redirect_to(:controller => 'login', :action => 'show', :id => params[:id])
+      redirect_to(controller: "login", action: "show", id: params[:id])
     else
       respond_to do |format|
-      format.js
-    end 
+        format.js
+      end
     end
   end
 
@@ -43,28 +41,27 @@ class UsersController < ApplicationController
   end
 
   def destroy
-      flash[:notice] = "Account destroyed successfully."
-  end 
+    flash[:notice] = "Account destroyed successfully."
+  end
 
-  private 
+  private
 
-    def user_params
-      params.require(:user).permit(
-        :first_name, 
-        :last_name, 
-        :nickname, 
-        :email, 
-        :picture,
-        :password,
-        :password_confirmation # respect rails naming convention!!
-      )
+  def user_params
+    params.require(:user).permit(
+      :first_name,
+      :last_name,
+      :nickname,
+      :email,
+      :picture,
+      :password,
+      :password_confirmation # respect rails naming convention!!
+    )
+  end
+
+  def confirm_logged_in
+    unless session[:user_id]
+      flash[:alert] = "Please, log in first to get access to this area."
+      redirect_to(login_path)
     end
-    
-    def confirm_logged_in
-      unless session[:user_id]
-        flash[:alert] = "Please, log in first to get access to this area."
-        redirect_to(login_index_path)
-      end
-    end
-
+  end
 end
