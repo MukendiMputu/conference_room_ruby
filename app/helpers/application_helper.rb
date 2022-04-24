@@ -16,4 +16,9 @@ module ApplicationHelper
   def is_logged_in
     session[:user_id].present?
   end
+
+  # Logotype leading to homepage
+  def show_logo_to_homepage
+    render(partial: "application/logo")
+  end
 end

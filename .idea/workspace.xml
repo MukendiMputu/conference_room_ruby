@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="updates new user controller, template">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+    <list default="true" id="d8673db0-fb0f-455e-ad55-33c2a31b3cd8" name="Changes" comment="adds application helper methods">
+      <change afterPath="$PROJECT_DIR$/app/views/application/_logo.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/login/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" afterDir="false" />
@@ -383,7 +382,7 @@
       <workItem from="1649949578266" duration="103000" />
       <workItem from="1649949694662" duration="7756000" />
       <workItem from="1650661673354" duration="531000" />
-      <workItem from="1650831741665" duration="2422000" />
+      <workItem from="1650831741665" duration="2734000" />
     </task>
     <task id="LOCAL-00001" summary="updates migrations">
       <created>1647817243603</created>
@@ -602,7 +601,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650836741060</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="updates new user controller, template">
+      <created>1650837829091</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1650837829091</updated>
+    </task>
+    <task id="LOCAL-00033" summary="adds application helper methods">
+      <created>1650837847275</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1650837847275</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +633,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adds missing resource routes" />
     <MESSAGE value="adds bootstrap" />
     <MESSAGE value="adds bootstrap gem to Gemfile" />
     <MESSAGE value="update link path in templates" />
@@ -645,7 +657,8 @@
     <MESSAGE value="updates gemfile &amp; adds specs files" />
     <MESSAGE value="updates user login template" />
     <MESSAGE value="updates new user controller, template" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates new user controller, template" />
+    <MESSAGE value="adds application helper methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds application helper methods" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/conference_room@rails_console.rcov" NAME="rails console Coverage Results" MODIFIED="1649527234504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="conference_room" />
