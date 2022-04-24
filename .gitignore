@@ -43,3 +43,6 @@ yarn-debug.log*
 .yarn-integrity
 /vendor/bundle/ruby/
 /~$conference_room_development_db_schema.drawio.bkp
+/.idea/dataSources/8a7419e7-fe6f-4846-bbf5-fc02db0df239.xml
+/.idea/dataSources.local.xml
+/.idea/dataSources/8a7419e7-fe6f-4846-bbf5-fc02db0df239/storage_v2/_src_/schema/information_schema.FNRwLQ.meta
