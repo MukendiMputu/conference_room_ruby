@@ -26,7 +26,7 @@ schema. I wrote the data migration classes in Rails to generate the schema and a
 
 For testing, I set up the required database environment and utilized fixtures, which are essentially fancy words for
 sample data, according to the Rails handbook. I also attempted to use the "Red, Green, Refactor" test-driven development
-paradigm. So I first wrote the tests, which by default fail, and then I wrote code to pass those tests. Finally, I
+paradigm. So I first wrote the tests, which by default failed, and then I wrote code to pass those tests. Finally, I
 refactored the written code to improve its readability and maintainability.
 
 ### Object-oriented Programming
