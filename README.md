@@ -3,7 +3,7 @@
 
 The purpose of this web application is for me to use Ruby on Rails to design and construct the core interface for a
 meeting room booking website. This, and many other similar projects I develop, serve as a learning environment for
-various software development principles. As a result, these are some of the thoughts I used to create this web
+various software development principles. As a result, these are some of the principles I applied to create this web
 application:
 
 ## Back-end Programming in Ruby
